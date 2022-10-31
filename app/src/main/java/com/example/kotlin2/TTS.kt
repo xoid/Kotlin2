@@ -12,11 +12,12 @@ class TTS(val act: Activity): TextToSpeech.OnInitListener
     {
         val tts = TextToSpeech(act, this)
         ready = true
+        say("speach init")
     }
 
     fun say(str:String)
     {
-       tts.speak(str, TextToSpeech.QUEUE_FLUSH, null,"")
+       if (ready) tts.speak(str, TextToSpeech.QUEUE_FLUSH, null,"")
     }
 
 }

@@ -2,10 +2,8 @@ package com.example.kotlin2
 
 import android.app.Activity
 
-class Words(act: Activity)
+class Words(act: MainActivity)
 {
-    var db:DB
-    init {
-        db = DB(act)
-    }
+   val db = DB(act)
+    
 }

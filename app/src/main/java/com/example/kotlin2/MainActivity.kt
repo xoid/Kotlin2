@@ -21,9 +21,10 @@ class MainActivity : AppCompatActivity()
         setContentView(R.layout.activity_main)
         setTurnScreenOn(true)
 
-        tts   = TTS(this); tts.say("lol")
+        tts   = TTS(this);
         hs    = HeadSet(this)
         words = Words(this)
+        tts.say("i am ready")
     }
 
     fun toast(message: CharSequence) = Toast.makeText(this, message, Toast.LENGTH_LONG).show()
