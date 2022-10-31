@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        tts = TTS(this); tts.say("lol")
-
-
+        tts   = TTS(this); tts.say("lol")
+        hs    = HeadSet(this)
+        words = Words(this)
 
     }
 
